@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Journey Sign Up</title>
+	<link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header-left">
+			<h1 class="brand">JOURNEY</h1>
+		</div>
+		<div class="header-right">
+			<div class="icon icon-user" title="User"></div>
+			<div class="icon icon-bell" title="Notifications"></div>
+			<div class="icon icon-cog" title="Settings"></div>
+			<p class="welcome-text">Welcome, <a href="#">Log In</a> or <a href="#">Sign Up</a></p>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="signup-modal">
+			<div class="modal-header">
+				<span class="green-square"></span>
+				<h2>Sign Up</h2>
+			</div>
+
+			<div class="social-login">
+				<button class="btn fb-btn">
+					<span class="icon icon-fb">f</span> Facebook
+				</button>
+				<button class="btn google-btn">
+					<span class="icon icon-google">G</span> Google
+				</button>
+			</div>
+
+			<div class="or-divider">or</div>
+
+			<form class="signup-form" action="#" method="post">
+				<label>
+					<input type="text" name="firstName" placeholder="Jason" class="form-control"
+						required />
+				</label>
+				<label>
+					<input type="text" name="lastName" placeholder="Last Name" class="form-control"
+						required />
+				</label>
+				<label>
+					<input type="email" name="email" placeholder="Email" class="form-control"
+						required />
+				</label>
+				<label>
+					<input type="password" name="password" placeholder="Choose Password"
+						class="form-control" required />
+				</label>
+				<label>
+					<input type="password" name="confirmPassword" placeholder="Confirm Password"
+						class="form-control" required />
+				</label>
+
+				<label class="terms-label">
+					<input type="checkbox" name="agree" required />
+					Agree our <a href="#" target="_blank">Terms & Conditions</a>
+				</label>
+
+				<button type="submit" class="btn submit-btn">Create Account</button>
+			</form>
+		</div>
+	</main>
+
+</body>
+
+</html>
