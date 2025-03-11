@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tabs with Theme Toggle (jQuery)</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			transition: background-color 0.3s, color 0.3s;
+			padding: 20px;
+		}
+
+		.theme-default {
+			background-color: #fff;
+			color: #23201D;
+		}
+
+		.theme-default .tabs-title {
+			background-color: #23201D;
+			color: #937341;
+		}
+
+		.theme-default .tabs-title.active {
+			background-color: #937341;
+			color: #23201D;
+		}
+
+		.theme-alternate {
+			background-color: #333;
+			color: #fff;
+		}
+
+		.theme-alternate .tabs-title {
+			background-color: #555;
+			color: #ddd;
+		}
+
+		.theme-alternate .tabs-title.active {
+			background-color: #ddd;
+			color: #555;
+		}
+
+		.centered-content {
+			height: 50vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.tabs {
+			display: flex;
+			margin-bottom: 20px;
+		}
+
+		.tabs-title {
+			padding: 20px;
+			cursor: pointer;
+			margin-right: 5px;
+		}
+
+		.tabs-content li {
+			display: none;
+			padding: 10px;
+			border: 1px solid #ccc;
+			width: 400px;
+			text-align: center;
+		}
+
+		.tabs-content li:first-child {
+			display: block;
+		}
+
+		.theme-toggle {
+			padding: 10px 20px;
+			cursor: pointer;
+			margin-top: 20px;
+			border: none;
+			border-radius: 5px;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.7.1.js"
+		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"
+		integrity="sha256-9zljDKpE/mQxmaR4V2cGVaQ7arF3CcXxarvgr7Sj8Uc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="centered-content">
+		<ul class="tabs">
+			<li class="tabs-title active">Akali</li>
+			<li class="tabs-title">Anivia</li>
+			<li class="tabs-title">Draven</li>
+			<li class="tabs-title">Garen</li>
+			<li class="tabs-title">Katarina</li>
+		</ul>
+		<ul class="tabs-content">
+			<li>Abandoning the Kinkou Order and her title of the Fist of Shadow, Akali now strikes alone,
+				ready to be the deadly weapon her people need...</li>
+			<li>Anivia is a benevolent winged spirit who endures endless cycles of life, death, and rebirth
+				to protect the Freljord...</li>
+			<li>In Noxus, warriors known as reckoners face one another in arenas where blood is spilled and
+				strength tested—but none has ever been as celebrated as Draven...</li>
+			<li>A proud and noble soldier, Garen fights at the head of the Dauntless Vanguard. He is
+				respected by both allies and enemies alike...</li>
+			<li>Decisive in judgment and lethal in combat, Katarina is a Noxian assassin of the highest
+				caliber, known for her swift and deadly strikes...</li>
+		</ul>
+		<button id="theme-toggle" class="theme-toggle">Сменить тему</button>
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>

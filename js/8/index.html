@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Price Input Validation</title>
+	<style>
+		/* Стиль для поля ввода */
+		#priceInput {
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+		}
+
+		/* Стиль для сообщения об ошибке */
+		.error {
+			color: red;
+			margin-top: 5px;
+		}
+
+		/* Стиль для отображения цены */
+		.price-display {
+			margin-bottom: 5px;
+			display: block;
+		}
+
+		/* Зеленая рамка */
+		.green-border {
+			border: 2px solid green;
+		}
+
+		/* Красная рамка */
+		.red-border {
+			border: 2px solid red;
+		}
+
+		/* Зеленый цвет текста внутри поля */
+		.green-text {
+			color: green;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Контейнер для отображения текущей цены (выше поля ввода) -->
+	<div id="displayArea"></div>
+
+	<!-- Метка и поле ввода -->
+	<label for="priceInput">Price: </label>
+	<input type="number" id="priceInput" />
+
+	<!-- Контейнер для вывода сообщения об ошибке (под полем ввода) -->
+	<div id="errorContainer"></div>
+
+	<script src="main.js">
+	</script>
+</body>
+
+</html>

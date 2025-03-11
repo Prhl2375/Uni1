@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Banners</title>
+  <style>
+    .image-to-show {
+      width: 400px;
+      height: 400px;
+      display: none;
+      /* hide all images by default */
+    }
+
+    .images-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="images-wrapper">
+    <img src="./img/1.jpg" alt="image of game" class="image-to-show" id="img0" />
+    <img src="./img/2.jpg" alt="image of game" class="image-to-show" id="img1" />
+    <img src="./img/3.JPG" alt="image of game" class="image-to-show" id="img2" />
+    <img src="./img/4.png" alt="image of game" class="image-to-show" id="img3" />
+  </div>
+
+  <button id="stopBtn">Прекратить</button>
+  <button id="resumeBtn">Возобновить показ</button>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
