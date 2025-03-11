@@ -1,0 +1,165 @@
+/* Base Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Header Styles */
+.main-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.95);
+	z-index: 1000;
+	padding: 15px 0;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+}
+
+nav {
+	float: right;
+}
+
+.nav-link {
+	color: #333;
+	text-decoration: none;
+	padding: 10px 15px;
+	transition: color 0.3s;
+}
+
+.nav-link:hover {
+	color: #007bff;
+}
+
+/* Section Common Styles */
+.section {
+	padding: 100px 0;
+	position: relative;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.section--angled {
+	clip-path: polygon(0% 0%,
+			100% 0%,
+			100% 80%,
+			50% 100%,
+			0% 80%);
+}
+
+/* Hero Section */
+.hero {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg1.jpg');
+	color: white;
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: 3.5em;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+/* What Section */
+.what {
+	background: white;
+	text-align: center;
+}
+
+/* Companies Section */
+.companies {
+	background-image: url('bg2.jpg');
+	text-align: center;
+}
+
+.company-logos {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+	margin: 40px 0;
+}
+
+/* Meet Us Section */
+.meet-us {
+	background: #f8f9fa;
+}
+
+.columns {
+	display: flex;
+	gap: 50px;
+}
+
+.col {
+	flex: 1;
+}
+
+/* Testimonials Section */
+.testimonials {
+	background-image: url('bg3.jpg');
+	color: white;
+	text-align: center;
+}
+
+.author {
+	font-style: italic;
+	margin-top: 20px;
+}
+
+/* Why Section */
+.why {
+	text-align: center;
+	padding: 150px 0;
+}
+
+.equation {
+	font-size: 1.5em;
+	letter-spacing: 2px;
+}
+
+/* Footer */
+.main-footer {
+	background: #111;
+	color: #888;
+	padding: 50px 0;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2.5em;
+	margin-bottom: 30px;
+}
+
+.lead {
+	font-size: 1.2em;
+	margin-bottom: 30px;
+	color: #666;
+}
+
+p {
+	margin-bottom: 20px;
+}
